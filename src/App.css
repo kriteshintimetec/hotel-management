@@ -1,0 +1,200 @@
+.module-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.module-form input,
+.module-form select {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e0e7ef;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f9fafc;
+  transition: border-color 0.2s;
+}
+
+.module-form input:focus,
+.module-form select:focus {
+  border-color: #2d3e50;
+  outline: none;
+}
+
+.module-form button {
+  background: linear-gradient(90deg, #2d3e50 60%, #1a2533 100%);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+}
+
+.module-form button:hover {
+  background: linear-gradient(90deg, #1a2533 60%, #2d3e50 100%);
+  box-shadow: 0 4px 16px rgba(44,62,80,0.12);
+}
+
+.module-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+.module-table th, .module-table td {
+  border: 1px solid #e0e7ef;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.module-table th {
+  background: #f0f4fa;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.module-table tr:nth-child(even) {
+  background: #f9fafc;
+}
+
+.dashboard-stats {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #e0e7ef 60%, #f7f7fa 100%);
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  text-align: center;
+  flex: 1 1 180px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+  margin-bottom: 1rem;
+}
+
+.stat-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: #2d3e50;
+  letter-spacing: 0.5px;
+}
+
+.stat-card p {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a2533;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f7fa;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background: #2d3e50;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.app-header h1 {
+  margin: 0 1rem;
+  font-size: 2rem;
+}
+
+.app-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.app-nav button {
+  background: #fff;
+  color: #2d3e50;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.app-nav button:hover {
+  background: #e0e7ef;
+}
+
+.app-main {
+  flex: 1;
+  padding: 2rem 0.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.module-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(44,62,80,0.08);
+  padding: 2.5rem 2rem;
+  margin-bottom: 2.5rem;
+  transition: box-shadow 0.2s;
+}
+
+.module-container:hover {
+  box-shadow: 0 8px 32px rgba(44,62,80,0.12);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+@media (max-width: 700px) {
+  .dashboard-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .app-main {
+    padding: 1rem 0.2rem;
+  }
+  .module-container {
+    padding: 1.2rem 0.5rem;
+  }
+}
